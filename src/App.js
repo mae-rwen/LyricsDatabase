@@ -8,6 +8,7 @@ import LyricsPage from './components/LyricsPage';
 import ScrollToTop from "react-scroll-to-top";
 import TestComp from './components/TestComp';
 import StartAtTop from './components/StartAtTop';
+import SendSomeLove from "./img/SendSomeLove"
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
             <Route path="/" element={<Main />} />
             <Route path="/lyricspage" element={<LyricsPage />} />
             <Route path="/testcomp" element={<TestComp />} />
+            <Route path="/sendsomelove" element={<SendSomeLove />} />
           </Routes>
         </Container>
       <Footer />
