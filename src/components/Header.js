@@ -55,11 +55,16 @@ export default function Header() {
             >
               <Offcanvas.Header closeButton>
                 <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
-                  Offcanvas
+                  Go to:
                 </Offcanvas.Title>
               </Offcanvas.Header>
               <Offcanvas.Body>
                 <Nav className="me-auto navbarLinks">
+                <Nav.Link>
+                    <NavLink to="/" className="navLink">
+                      Homepage
+                    </NavLink>
+                  </Nav.Link>
                   <Nav.Link>
                     <NavLink to="/lyricspage" className="navLink">
                       Lyrics Page
