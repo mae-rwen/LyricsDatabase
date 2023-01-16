@@ -1,7 +1,7 @@
 import SongCard from "./SongCard"
 
 
-export default function Main() {
+export default function TestComp() {
   return (
     <div>
         Main
