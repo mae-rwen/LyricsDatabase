@@ -8,7 +8,7 @@ import { NavLink, useNavigate } from "react-router-dom";
 import { Button } from "react-bootstrap";
 import Offcanvas from "react-bootstrap/Offcanvas";
 
-export default function Header() {
+export default function Header({ songData }) {
   const navigate = useNavigate();
   const goBack = () => {
     navigate(-1);
@@ -28,24 +28,24 @@ export default function Header() {
           variant="dark"
         >
           <Container>
-          <Navbar.Brand>
-            <Button
-              variant="outline-light"
-              onClick={goBack}
-              className="navButtons"
-            >
-              {"<<"}
-            </Button>
-            <NavLink to="/">
-              <img src={icon} className="headerIcon" alt="icon of the app" />
-            </NavLink>
-            <Button
-              variant="outline-light"
-              onClick={goForward}
-              className="navButtons"
-            >
-              {">>"}
-            </Button>
+            <Navbar.Brand>
+              <Button
+                variant="outline-light"
+                onClick={goBack}
+                className="navButtons"
+              >
+                {"<<"}
+              </Button>
+              <NavLink to="/">
+                <img src={icon} className="headerIcon" alt="icon of the app" />
+              </NavLink>
+              <Button
+                variant="outline-light"
+                onClick={goForward}
+                className="navButtons"
+              >
+                {">>"}
+              </Button>
             </Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
             <Navbar.Offcanvas
@@ -60,7 +60,7 @@ export default function Header() {
               </Offcanvas.Header>
               <Offcanvas.Body>
                 <Nav className="me-auto navbarLinks">
-                <Nav.Link>
+                  <Nav.Link>
                     <NavLink to="/" className="navLink">
                       Homepage
                     </NavLink>
@@ -87,7 +87,7 @@ export default function Header() {
                   </Nav.Link>
                 </Nav>
 
-                <SearchBar />
+                <SearchBar songData={songData} />
               </Offcanvas.Body>
             </Navbar.Offcanvas>
           </Container>
