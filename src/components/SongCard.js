@@ -13,12 +13,11 @@ export default function SongCard({ songData }) {
           <Card style={{ width: "18rem" }}>
             <Card.Img variant="top" src={m.artwork} className="cardImage" />
             <Card.Body>
-              <Card.Title>{m.title}</Card.Title>
+              <Card.Title>{`${m.artist} - ${m.title}`}</Card.Title>
               <Card.Text className="description"></Card.Text>
               <Nav className="nav gap-3 ">
-                <Link to={`/lyricspage/${m._id}`}>Lyrics</Link>
+                <Link to={`/lyricspage/${m._id}`}><Button variant="dark">See the lyrics</Button></Link>
               </Nav>
-              {/* <StarRating /> */}
             </Card.Body>
           </Card>
         );
