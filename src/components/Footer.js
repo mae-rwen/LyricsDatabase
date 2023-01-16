@@ -12,7 +12,7 @@ export default function Footer() {
           <Nav className="me-auto">
             <Nav.Link>
               <NavLink to="/sendsomelove" className="footerLink">
-                Brought to you by Jack, Tobias, Agata, Sindhura, Vedrana 💛
+                Brought to you by Jack, Tobias, Agata, Sindhura, Ve 💛
               </NavLink>
             </Nav.Link>
           </Nav>
