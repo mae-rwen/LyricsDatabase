@@ -1,5 +1,5 @@
-import Form from 'react-bootstrap/Form';
-import { Button } from 'react-bootstrap';
+import Form from "react-bootstrap/Form";
+import { Button } from "react-bootstrap";
 
 export default function SearchBar() {
   return (
